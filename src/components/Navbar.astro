@@ -1,6 +1,26 @@
-<header class="w-full py-2 px-4">
+---
+
+---
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const sidebarHamburger = document.getElementById("sidebar-hamburger");
+  const sidebarNav = document.getElementById("sidebar-nav");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.add("hidden");
+    sidebarNav.classList.remove("hidden");
+  });
+
+  sidebarHamburger.addEventListener("click", () => {
+    sidebarNav.classList.add("hidden");
+    hamburger.classList.remove("hidden");
+  });
+</script>
+
+<header class="w-full">
   <nav
-    class="text-gray-200 py-1 flex justify-between font-['Noto_Sans_Jp'] text-lg my-auto"
+    class="text-gray-200 flex justify-between font-['Noto_Sans_Jp'] text-lg my-auto py-2 px-4"
   >
     <div class="font-['bebas_neue'] text-2xl my-auto">
       <a
@@ -9,7 +29,8 @@
         ><span class="text-emerald-600">Steven</span>Perez</a
       >
     </div>
-    <ul class="flex gap-8 my-auto">
+    <!-- Main Nav -->
+    <ul class="gap-8 my-auto hidden md:flex">
       <li>
         <a
           href=""
@@ -39,7 +60,108 @@
         >
       </li>
     </ul>
+    <!-- Hamburger -->
+    <div
+      id="hamburger"
+      class="flex flex-col gap-1.5 w-6 hover:cursor-pointer my-auto md:hidden"
+    >
+      <div class="border-b-2 border-white"></div>
+      <div class="border-b-2 border-white"></div>
+      <div class="border-b-2 border-white"></div>
+    </div>
+    <!-- Sidebar Nav on small -->
 
+    <nav
+      id="sidebar-nav"
+      class="absolute hidden md:hidden h-screen bg-black/50 h-full top-0 right-0 w-full flex justify-end z-1"
+    >
+      <div class="w-3/5 bg-neutral-600 flex flex-col justify-between">
+        <ul class="flex flex-col">
+          <li id="sidebar-hamburger" class="flex flex-row justify-end">
+            <div
+              class="flex flex flex-col flex gap-1.5 hover:cursor-pointer my-auto px-3 py-4 hover:bg-neutral-500 active:bg-neutral-800"
+            >
+              <div class="border-b-2 border-white w-6"></div>
+              <div class="border-b-2 border-white w-6"></div>
+              <div class="border-b-2 border-white w-6"></div>
+            </div>
+          </li>
+          <li>
+            <a
+              href=""
+              class="block px-4 py-3 hover:bg-neutral-500 active:bg-neutral-800 active:text-neutral-400"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="block px-4 py-3 hover:bg-neutral-500 active:bg-neutral-800 active:text-neutral-400"
+              >Work</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="block px-4 py-3 hover:bg-neutral-500 active:bg-neutral-800 active:text-neutral-400"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="block px-4 py-3 hover:bg-neutral-500 active:bg-neutral-800 active:text-neutral-400"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Social Icons -->
+        <ul class="flex flex-row flex-wrap bg-neutral-500">
+          <li>
+            <a
+              href="https://www.github.com/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-neutral-400 active:bg-neutral-800 active:text-neutral-400"
+              ><img
+                src="/assets/github.png"
+                width="22"
+                height="22"
+                alt="Github Icon"
+              /></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-neutral-400 active:bg-neutral-800 active:text-neutral-400"
+            >
+              <img
+                src="/assets/linkedin.png"
+                width="22"
+                height="22"
+                alt="Linkedin Icon"
+              /></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-neutral-400 active:bg-neutral-800 active:text-neutral-400"
+            >
+              <img
+                src="/assets/twitter.png"
+                width="22"
+                height="22"
+                alt="Twitter X Icon"
+              /></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Md and larger links -->
     <ul
       class="flex gap-6 rounded-3xl px-3 py-0.5 bg-gradient-to-r from-neutral-200 to-neutral-500 hidden md:flex my-auto"
     >
@@ -74,7 +196,7 @@
       <li
         class="hover:border-b-2 active:border-emerald-600 hover:border-blue-600 p-1"
       >
-        <a href="https://www.twitter.com/stevenalp18" target="_blank" class="">
+        <a href="https://www.twitter.com/stevenalp18" target="_blank">
           <img
             src="/assets/twitter.png"
             width="22"
