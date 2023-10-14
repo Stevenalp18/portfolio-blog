@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import portfolioImage from "../../public/assets/steven.jpeg";
+---
+
+<section>
+  <div
+    class="relative bg-[url('/assets/background.jpg')] w-screen h-screen bg-center bg-cover opacity-5"
+  >
+  </div>
+  <div
+    class="absolute left-0 top-0 w-full h-screen flex justify-center bg-blue-900/20"
+  >
+    <div class="m-auto p-10 flex flex-col mx-auto text-center">
+      <Image
+        src={portfolioImage}
+        alt="Image of myself, Steven"
+        width={200}
+        height={200}
+        class="rounded-full mx-auto"
+      />
+      <div class="text-neutral-200 text-lg flex flex-col gap-3">
+        <div class="text-5xl font-['Lobster']">- Steven Perez -</div>
+        <div class="text-center font-['Noto_Sans_JP']">
+          Web Developer | Freelancer | Gamer
+        </div>
+        <ul class="flex flex-row flex-wrap m-auto">
+          <li>
+            <a
+              href="https://www.github.com/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-emerald-400 active:bg-emerald-800 active:text-emerald-400"
+              ><img
+                src="/assets/github.png"
+                width="22"
+                height="22"
+                alt="Github Icon"
+                class="contrast-0"
+              /></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-emerald-400 active:bg-emerald-800 active:text-emerald-400"
+            >
+              <img
+                src="/assets/linkedin.png"
+                width="22"
+                height="22"
+                alt="Linkedin Icon"
+                class="contrast-0"
+              /></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com/stevenalp18"
+              target="_blank"
+              class="block px-4 py-3 hover:bg-emerald-400 active:bg-emerald-800 active:text-emerald-400"
+            >
+              <img
+                src="/assets/twitter.png"
+                width="22"
+                height="22"
+                alt="Twitter X Icon"
+                class="contrast-0"
+              /></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
