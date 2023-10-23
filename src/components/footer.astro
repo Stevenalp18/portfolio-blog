@@ -1,0 +1,43 @@
+---
+import NavIcons from "./NavIcons.astro";
+---
+
+<footer
+  class="text-white text-center border-t border-neutral-800 w-full h-auto py-6"
+>
+  <div class="mx-auto flex flex-col gap-4">
+    <ul class="gap-8 m-auto hidden md:flex">
+      <li>
+        <a
+          href="#about"
+          class="hover:border-b-2 hover:border-blue-900 py-1 active:border-emerald-900 active:text-neutral-400"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="hover:border-b-2 hover:border-blue-900 py-1 active:border-emerald-900 active:text-neutral-400"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="hover:border-b-2 hover:border-blue-900 py-1 active:border-emerald-900 active:text-neutral-400"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="hover:border-b-2 hover:border-blue-900 py-1 active:border-emerald-900 active:text-neutral-400"
+          >Blog</a
+        >
+      </li>
+    </ul>
+    <NavIcons />
+  </div>
+
+  <div class="mt-4">© 2023 Steven Perez, All Rights Reserved</div>
+</footer>

@@ -3,14 +3,64 @@
 ---
 
 <section
-  id="work"
-  class="text-white border-t border-neutral-800 w-full h-auto py-12 px-8 flex flex-col gap-10 bg-emerald-750"
+  class="text-white border-t border-neutral-800 w-full h-auto py-12 px-8 flex flex-col gap-10"
+  id="contact"
 >
-  <h2 class="text-center text-5xl">Contact</h2>
-  <form action="" class="border-2 mx-auto">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum
-    temporibus! Adipisci voluptate corrupti facere velit! Vero, aspernatur minus
-    optio, consequuntur sed hic reiciendis laboriosam eum cumque, suscipit
-    eligendi. Natus!
-  </form>
+  <div class="flex flex-col gap-10 my-auto">
+    <h2 class="text-center text-5xl">Contact</h2>
+    <p class="text-center text-lg">
+      Want to hire me, Work together, or just want to chat?
+      <br />
+      <br />
+       Reach out via the contact form below!
+      <br />You can also send me a message via linkedin or twitter!
+    </p>
+    <form
+      action="https://formsubmit.co/2d77e14ba6424397a3dad5a6bdc8c19a"
+      method="post"
+      class="mx-auto md:w-4/5 lg:w-2/5 w-full flex flex-col gap-4"
+    >
+      <input
+        type="text"
+        name="name"
+        class="bg-zinc-950 p-2"
+        placeholder="Enter Name"
+        required
+        aria-required="true"
+      />
+      <input
+        type="email"
+        name="email"
+        class="bg-black p-2"
+        placeholder="Enter Email"
+        required
+        aria-required="true"
+      />
+      <input
+        type="number"
+        name="phone number"
+        class="bg-zinc-950 p-2"
+        placeholder="Enter Phone Number (optional) "
+        required
+        aria-required="false"
+      />
+      <textarea
+        name="message"
+        cols="30"
+        rows="6"
+        class="bg-zinc-950 p-2"
+        required
+        aria-required="true"
+        placeholder="Enter your message here..."></textarea>
+      <input
+        type="hidden"
+        name="_autoresponse"
+        value="Hi  Thank you for reaching out! I appreciate the interest, I will respond as soon as I see this message! In the meantime, enjoy the rest of your day! :)"
+      />
+      <input type="hidden" name="_template" value="table" />
+      <button type="submit" class="bg-blue-800 p-2 text-lg"
+        >Send Message!</button
+      >
+    </form>
+  </div>
 </section>
