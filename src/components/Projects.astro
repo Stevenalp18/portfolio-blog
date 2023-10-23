@@ -1,0 +1,172 @@
+---
+import { Image } from "astro:assets";
+import weatherApp from "../../public/assets/weatherApp.png";
+import quoteGenerator from "../../public/assets/quoteGenerator.png";
+import previousPortfolio from "../../public/assets/portfolio.png";
+import ffhandymanservices from "../../public/assets/ffhandymanservices.png";
+import nucamp from "../../public/assets/nucamp.png";
+---
+
+<section
+  class="text-white border-t border-neutral-800 w-full h-auto py-12 flex flex-col gap-10 bg-emerald-750"
+>
+  <h2 class="text-center text-5xl">Projects</h2>
+  <div class="flex flex-col justify-center gap-8 lg:w-3/5 md:w-3/4 px-8 m-auto">
+    <div
+      class="bg-emerald-800 rounded-xl text-center w-full flex flex-col lg:gap-8 lg:flex-row px-8 pb-8 lg:pb-0"
+    >
+      <Image
+        class="m-auto"
+        src={weatherApp}
+        alt="weather app image"
+        width={250}
+        height={200}
+      />
+      <div class="my-auto flex flex-col justify-between gap-10">
+        <div class="text-2xl">Weather Application</div>
+        <p>
+          This project is made with React, Tailwind, Redux, Fetch, Async/Await,
+          it utilizes the WeatherApi and consumes multiple endpoints from the
+          Weather API to render the Current and Forecast weather conditions. I
+          also implemented a bit of redux to help with the global search and
+          reduce prop drilling.
+        </p>
+        <div class="flex flex-row gap-4 mx-auto">
+          <a target="_blank" href="https://github.com/Stevenalp18/weather-app"
+            >Github</a
+          >
+          <a target="_blank" href="https://weather-app-stevenalp18.netlify.app/"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-emerald-800 rounded-xl text-center w-full flex flex-col lg:gap-8 lg:flex-row-reverse px-8 pb-8 lg:pb-0"
+    >
+      <Image
+        class="m-auto"
+        src={quoteGenerator}
+        alt="quote generator app image"
+        width={250}
+        height={200}
+      />
+      <div class="my-auto flex flex-col justify-between gap-10">
+        <div class="text-2xl">Quote Generator</div>
+        <p>
+          This project is made with React, Tailwind, Fetch and some Conditionoal
+          Rendering Logic. It utilizes a public API and the user can add,
+          delete, or check out the quotes that have been saved.
+        </p>
+        <div class="flex flex-row gap-4 mx-auto">
+          <a
+            target="_blank"
+            href="https://github.com/Stevenalp18/quote-generator">Github</a
+          >
+          <a
+            target="_blank"
+            href="https://quote-generator-stevenalp18.netlify.app/">Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-emerald-800 rounded-xl text-center w-full flex flex-col lg:gap-8 lg:flex-row px-8 pb-8 lg:pb-0"
+    >
+      <Image
+        class="m-auto"
+        src={ffhandymanservices}
+        alt="client website ffhandyman services image"
+        width={250}
+        height={200}
+      />
+      <div class="my-auto flex flex-col justify-between gap-10">
+        <div class="text-2xl">FF Handyman Services LLC</div>
+        <p>
+          This is a client website. The client requested a simple website. He
+          wanted something fast and responsive and with a contact form. I ended
+          up using Astro because it is known for it's speed and SEO
+          friendliness. I made it with partial hydration for react components to
+          make a carousel and the rest was little to no client side javascript.
+        </p>
+        <div class="flex flex-row gap-4 mx-auto">
+          <a
+            target="_blank"
+            href="https://github.com/Stevenalp18/ffhandymanservices">Github</a
+          >
+          <a
+            target="_blank"
+            href="https://ffhandymanservices-stevenalp18.netlify.app/"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-emerald-800 rounded-xl text-center w-full flex flex-col lg:gap-8 lg:flex-row-reverse px-8 pb-8 lg:pb-0"
+    >
+      <Image
+        class="m-auto"
+        src={previousPortfolio}
+        alt="old previous portfolio image"
+        width={250}
+        height={200}
+      />
+      <div class="my-auto flex flex-col justify-between gap-10">
+        <div class="text-2xl">Previous Portfolio Website</div>
+        <p>
+          This project is made with React, React-Router, Tailwind, Hooks, SPA,
+          and Canva for some of the designs. I created to showcase my projects
+          that I have worked on and currently am working on plus I learned
+          essential React Concepts. I will update this often and this will
+          probably be replaced by another featured project.
+        </p>
+        <div class="flex flex-row gap-4 mx-auto">
+          <a
+            target="_blank"
+            href="https://github.com/Stevenalp18/react-portfolio">Github</a
+          >
+          <a
+            target="_blank"
+            href="https://react-portfolio-stevenalp18.netlify.app/">Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-emerald-800 rounded-xl text-center w-full flex flex-col lg:gap-8 lg:flex-row px-8 pb-8 lg:pb-0"
+    >
+      <Image
+        class="m-auto"
+        src={nucamp}
+        alt="old previous portfolio image"
+        width={250}
+        height={200}
+      />
+      <div class="my-auto flex flex-col justify-between gap-10">
+        <div class="text-2xl">Nucamp Campsite Booking</div>
+        <p>
+          This was a project that I completed through the nucamp course! The css
+          framework we used was Bootstrap and React to make it interactive. You
+          are able to schedule appointments for a campsite and put how many
+          people, what date, etc.
+        </p>
+        <div class="flex flex-row gap-4 mx-auto">
+          <a target="_blank" href="https://github.com/Stevenalp18/nucampsite"
+            >Github</a
+          >
+          <a
+            target="_blank"
+            href="https://bootstrap-nucamp-stevenalp18.netlify.app/"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto px-8 text-center">
+    <a target="_blank" href="https://github.com/stevenalp18" class="underline"
+      >Check out my Github with the other projects by clicking me!</a
+    >
+  </div>
+</section>

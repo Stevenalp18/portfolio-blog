@@ -1,5 +1,53 @@
 ---
-
+import NavIcons from "./NavIcons.astro";
 ---
 
-<div class="text-white w-full p-32">This is about page</div>
+<section
+  id="about"
+  class="text-white lg:h-screen h-auto py-12 w-full flex my-auto flex-col gap-12"
+>
+  <div class="flex flex-col gap-8 justify-center my-auto">
+    <h2 class="text-center text-5xl">About</h2>
+    <div class="w-full flex text-center flex-col">
+      <div
+        class="flex flex-col justify-center gap-8 lg:w-3/5 md:w-3/4 px-8 m-auto"
+      >
+        <p class="text-lg">
+          Hi there! 👋
+          <br />
+          <br />
+           My name is Steven Perez, I am a Web Developer. I have been creating
+          Web Applications since 2022. I started with simple projects, small
+          forms with just HTML & CSS. Now I am building real applications,
+          larger projects, personal and for clients, filled with API's, SEO,
+          Responsivess, and a multitude of functions.
+          <br />
+          <br />
+           It started with a dream, an old hobby, and after working many odd
+          jobs, I knew I wanted a change for the better. I started to self teach
+          with FreeCodeCamp but still had small doubts. I joined a small
+          affordable coding bootcamp, Nucamp, and gained a lot of information to
+          fill the knowledge gaps.
+          <br />
+          <br />
+           Fast Forward... I am now building my own web applications with API's,
+          React, Astro, Tailwind, many new technologies. I jumped into the deep
+          end and learn by doing and taking action now! I am using Astro for
+          this portfolio/blog hybrid. It allows me to do both while serving
+          little to no Javascript to the client side unless specified via
+          partial hydration. I also create websites professionally when I find a
+          client who needs a website! I work my full time job as a Territory
+          Manager at a large Paint Company and have become more serious about
+          converting my passion until a full fledge career!
+          <br />
+          <br />
+           This is just a scratch on the surface about myself, I will release my
+          full story on one of the blog articles. Anyway, check out a few of my
+          projects that I have created in the past, below. Also I will below my
+          links directly below this.
+        </p>
+        <NavIcons />
+      </div>
+    </div>
+  </div>
+</section>
